@@ -49,6 +49,6 @@ The priority of moves should be:
     Away from col
     if position repeated, invalid sequence
 '''
-
+#BURHHHHH why doesn't it work
 (find_path(start[0],start[1],goal,[],0))
 print(paths)
