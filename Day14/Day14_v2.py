@@ -18,7 +18,7 @@ def my_func(salt, loop):
         hexa = hash_loop(loop, salt+str(index))
         r3, let = repeats(hexa,3)
         if r3:
-            start_int, end_int = index + 1, index + 1000 #sets tje new start and end index to the key index + 1 and a thousand after that
+            start_int, end_int = index + 1, index + 1000 #sets the new start and end index to the key index + 1 and a thousand after that
             if len(hashed) == 0: hashed = [hash_loop(loop, salt + str(i)) for i in range(start_int,end_int+1)] #adds the hashes to a list based on the start and end index for first 3 pattern hash
             elif start_int <= cur_end_ind: #if the index of the needed hashes overlaps what is already there
                 hashed = hashed[start_int-cur_start_ind:] #the already made 1000 hashes is reduced by cutting off the beginning up to the new start index which is now hashed[0]

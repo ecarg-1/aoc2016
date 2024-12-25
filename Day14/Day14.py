@@ -16,7 +16,7 @@ def hash_loop(loop, saltstr):
     for _ in range(loop):
         hexa = md5(hexa.encode()).hexdigest()
     return hexa
-#####this function did not work well for part 2 having to calculate thousands of the same hashes each loop
+#####this function did not work well for part 2 having to calculate thousands of the same hashes each loop, pt was running for about 20 hours and didn't find 1/3 of the keys
 # def my_func(salt, loop):
 #     index, keyes = 0, 0
 #     while keyes != 64:
