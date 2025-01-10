@@ -9,4 +9,3 @@ def day9_2015(perm:list, distances:dict):
                 cur_dist += distances[(route[i+1],route[i])]
         if min_dist==0 or cur_dist < min_dist: min_dist = cur_dist
     return min_dist
-
