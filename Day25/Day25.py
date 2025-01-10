@@ -30,4 +30,4 @@ while True:
         i += 1                                                                                  #inc instruction
     if done: break                                                                              #breaks outter while loop once answer is found
     rega += 1
-print(rega)     #prints answer, kinds slow though
+print(rega)     #prints answer, kinda, slow though
